@@ -1,0 +1,38 @@
+{
+  "tests": 4,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "HypotenuseSuite",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "TestNormal",
+          "file": "\/Users\/a1\/Desktop\/OOP\/5lesson\/tests\/my_test.cpp",
+          "line": 5
+        },
+        {
+          "name": "TestZero",
+          "file": "\/Users\/a1\/Desktop\/OOP\/5lesson\/tests\/my_test.cpp",
+          "line": 10
+        },
+        {
+          "name": "AssertVsExpect",
+          "file": "\/Users\/a1\/Desktop\/OOP\/5lesson\/tests\/my_test.cpp",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "name": "HypotenuseRandSuite",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "TestRange",
+          "file": "\/Users\/a1\/Desktop\/OOP\/5lesson\/tests\/my_test.cpp",
+          "line": 25
+        }
+      ]
+    }
+  ]
+}

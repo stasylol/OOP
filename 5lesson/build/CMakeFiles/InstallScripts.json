@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/a1/Desktop/OOP/5lesson/build/cmake_install.cmake",
+		"/Users/a1/Desktop/OOP/5lesson/build/my_lib/cmake_install.cmake",
+		"/Users/a1/Desktop/OOP/5lesson/build/tests/cmake_install.cmake",
+		"/Users/a1/Desktop/OOP/5lesson/build/_deps/googletest-build/cmake_install.cmake",
+		"/Users/a1/Desktop/OOP/5lesson/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"/Users/a1/Desktop/OOP/5lesson/build/_deps/googletest-build/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
