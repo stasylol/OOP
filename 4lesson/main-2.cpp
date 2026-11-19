@@ -122,6 +122,13 @@ int sumFirstTen(const std::vector<int>& vec) {
     return std::accumulate(vec.begin(), vec.begin() + n, 0);
 }
 
+int sumFirst2 = 0; //именная 
+void sumElements(int x)
+{
+        
+    sumFirst2 += x;
+}
+
 int main() {
 
     int wer;
@@ -133,11 +140,6 @@ int main() {
     std::vector<int> vecA = readVectorFromFile(file1);
     std::vector<int> vecB = readVectorFromFile(file2);
 
-    if (vecA.empty() || vecB.empty()) {
-        std::cerr << "Ошибка: один из файлов не прочитан или не содержит чисел.\n"
-                  << "Проверь, что оба txt-файла лежат в рабочей папке программы.\n";
-        return 1;
-    }
 
     std::vector<int>& first = (vecA.size() >= vecB.size()) ? vecA : vecB;
     std::vector<int>& second = (vecA.size() >= vecB.size()) ? vecB : vecA;
@@ -166,10 +168,16 @@ int main() {
     int sumFirst1 = std::accumulate(first.begin(), first.end(), 0);
     int sumSecond1 = std::accumulate(second.begin(), second.end(), 0);
 
-    int sumFirst2 = 0;
-    std::for_each(first.begin(), first.end(), [&sumFirst2](int x) {
-        sumFirst2 += x;
-    });
+    
+
+
+
+    std::for_each(first.begin(), first.end(), sumElements); //для именной
+
+    // int sumFirst2 = 0;
+    // std::for_each(first.begin(), first.end(), [&sumFirst2](int x) {
+    //     sumFirst2 += x;
+    // });
 
     int sumSecond2 = 0;
     std::for_each(second.begin(), second.end(), [&sumSecond2](int x) {
